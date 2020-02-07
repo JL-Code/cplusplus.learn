@@ -40,3 +40,5 @@ cc -o hello hello.c
 ```
 
 ## 总结
+
+![C语言开发编译](./C开发编译.png)
