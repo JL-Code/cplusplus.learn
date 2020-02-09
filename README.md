@@ -29,7 +29,7 @@ cc -c hello.c
 > 链接：将 hello.o 文件和 C 语言函数库组合生成可执行文件。
 
 ```shell
-cc -o hello hello.c
+cc hello.c -o hello
 ```
 
 运行 C 语言程序
