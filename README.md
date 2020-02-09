@@ -42,3 +42,10 @@ cc -o hello hello.c
 ## 总结
 
 ![C语言开发编译](./C开发编译.png)
+
+`gcc/g++` (旧版 `C/C++` 编译器)
+`clang/clang++` `llvm` (新版 `C/C++` 编译器)
+
+## 参考文章
+
+* [C/C++: clang 代替 gcc](https://fzheng.me/2016/03/15/clang-gcc/)
