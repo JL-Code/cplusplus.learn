@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "custom.h": "c",
+        "stdio.h": "c",
+        "parent.h": "c",
+        "parent2.h": "c"
+    }
+}

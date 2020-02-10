@@ -1,3 +1,1 @@
-#include "./parent.h"
-
-int hello(char* msg);
+int hello(char *msg);
