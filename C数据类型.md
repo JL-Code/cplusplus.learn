@@ -1,23 +1,54 @@
 # 数据类型
 
+> C 语言没有 `Boolean` 类型，取而代之的是 `0` 和 `1`。所有非 `0` 情况都为 **“真”**，只有 `0` 才是 **“假”**
+
 ## 基本数据类型
 
-int、flot、double、char
+`int`、`flot`、`double`、`char`
 
 ## 空类型
 
-void
+`void`
 
 ## 指针类型
 
-void*
+`void *`
 
 ## 构造类型
 
 数组
-struct 结构体
-union 公用体
-enum 枚举
+
+声明：
+> 语法： <类型><变量名> [<常量>];
+
+```c
+// 合法的声明
+int a [10]; // 整型常量
+int b ['A']; // 字符常量，其实就是65
+int c [3*4]; // 整型常量表达式
+int d[] = {0,1,2} // 当对全部数组元素都赋初值时，可以省略元素个数
+int e[4]={0,2} // 当数组为整型时，初始化未确定初值的元素，默认为0，所以上面的 e[2]、e[3]都为 0
+
+// 无效的声明
+int size = 10;
+int arr [size]; // 使用变量设置数组大小
+int arr2 []; // 为设置数组大小
+
+```
+
+数组长度:
+
+```c
+int arr [10] = {2,1};
+int count = sizeof(arr) / sizeof(arr[0]); // 利用利用 `sizeof` 获取 `arr` 的总字节数除以 `arr` 单个元素占用的字节数
+printf("arr size: %lu\n",count);
+```
+
+注：C语言中 **编译器是不会对数组下标越界进行检查**，所以在访问数组时自行验证。
+
+`struct` 结构体
+`union` 公用体
+`enum` 枚举
 
 ## sizeof
 
@@ -82,3 +113,21 @@ Mac系统的 `include` 路径有：
 /usr/include
 /usr/local/include
 ```
+
+## 控制语句
+
+### 循环语句
+
+`do while`
+`while`
+`for`
+
+### 条件语句
+
+`if`
+`if else`
+`switch`
+
+### goto 语句
+
+`goto`
